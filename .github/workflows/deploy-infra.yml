@@ -20,7 +20,7 @@ permissions:
 
 env:
   TF_WORKING_DIR: environment
-  TF_VARS_FILE: dev/dev.tfvars
+  TF_VARS_FILE: dev/terraform.tfvars
 
 jobs:
 
