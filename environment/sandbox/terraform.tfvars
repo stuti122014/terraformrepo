@@ -3,7 +3,7 @@
 #         resource_group_name = ""
 #         location = ""
 #     }
-    
+
 # }
 # sandboxroot_aks = {
 #     aks1 = {
@@ -15,7 +15,7 @@
 #         vm_size = ""
 #         node_count  = ""
 #         enviroment_name = "sandbox"
-    
+
 #     }
 # }
 resource_group_name  = "sandbox-nitor-001-rg"

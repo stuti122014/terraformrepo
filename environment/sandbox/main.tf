@@ -6,7 +6,7 @@
 #     depends_on = [ module.resource_group ]
 #     source = "../../Module/azurerm_kubernetese_cluster"
 #     AKS = var.sandboxroot_aks
-  
+
 # } 
 resource "azurerm_resource_group" "rg" {
   name     = var.resource_group_name
@@ -19,7 +19,7 @@ resource "azurerm_storage_account" "storage" {
   account_tier             = "Standard"
   account_replication_type = "LRS"
 
-  
+
 }
 resource "azurerm_mssql_server" "sql_server" {
   name                         = var.sql_server_name

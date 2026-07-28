@@ -17,12 +17,12 @@ variable "root_AKS" {
 
 }
 variable "root_userpool" {
-  
+
 }
 variable "root_load_balancers" {
-  
+
 }
 
-variable "root_acrs"{
+variable "root_acrs" {
 
 }

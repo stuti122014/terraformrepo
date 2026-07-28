@@ -39,36 +39,36 @@ root_server = {
     location            = "central india"
     resource_group_name = "dev-nitor-rg-002"
     admin_login         = "sqladmin"
-    admin_password      = "@1234devnitor"    
- 
+    admin_password      = "@1234devnitor"
+
   }
 }
 root_AKS = {
-    aks1 = {
-        aks_name = "dev-nitor-cluster-01"
-        location = "central india"
-        resource_group_name = "dev-nitor-rg-002"
-        dns_prefix = "devnitoraks"
-        default_node_pool = "system"
-        vm_size = "standard_d2_v3"
-        node_count  = "1"
-        enviroment_name = "Dev"
+  aks1 = {
+    aks_name            = "dev-nitor-cluster-01"
+    location            = "central india"
+    resource_group_name = "dev-nitor-rg-002"
+    dns_prefix          = "devnitoraks"
+    default_node_pool   = "system"
+    vm_size             = "standard_d2_v3"
+    node_count          = "1"
+    enviroment_name     = "Dev"
 
-    }
+  }
 }
 root_database = {
-    database1 ={
-         database_name = "dev-nitor-db-001"  
-         sku_name = "S0"
-    }
+  database1 = {
+    database_name = "dev-nitor-db-001"
+    sku_name      = "S0"
+  }
 }
 root_userpool = {
-    userpool1 = {
-    userpoolname = "devk8usrpl01"
+  userpool1 = {
+    userpoolname    = "devk8usrpl01"
     userpoolvm_size = "standard_d2_v3"
-    usernodecount = "1"
+    usernodecount   = "1"
     enviroment_name = "dev"
-    }
+  }
 }
 root_load_balancers = {
   lb1 = {
@@ -84,7 +84,7 @@ root_acrs = {
     resource_group_name = "dev-nitor-rg-002"
     sku                 = "Standard"
   }
-  
-  }
+
+}
 
 

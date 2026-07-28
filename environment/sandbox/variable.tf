@@ -1,8 +1,8 @@
 # variable "sandboxroot_rg" {
-  
+
 # }
 # variable "sandboxroot_aks" {
-  
+
 # }
 variable "resource_group_name" {
   type = string
