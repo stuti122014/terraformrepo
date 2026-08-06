@@ -33,7 +33,7 @@ root_network = {
       subnetAppgw = {
         name             = "dev-nitor-subnet-App-Gateway"
         address_prefixes = ["10.0.2.0/24"]
-      } 
+      }
     }
   }
 }
@@ -57,8 +57,8 @@ root_AKS = {
     vm_size             = "standard_d2_v3"
     node_count          = "1"
     enviroment_name     = "Dev"
-    vnetname = "dev-nitor-vnet-001"
-    subnetname = "dev-nitor-subnet-001"
+    vnetname            = "dev-nitor-vnet-001"
+    subnetname          = "dev-nitor-subnet-001"
 
   }
 }
@@ -70,12 +70,12 @@ root_database = {
 }
 root_userpool = {
   userpool1 = {
-    userpoolname    = "devk8usrpl01"
-    userpoolvm_size = "standard_d2_v3"
-    usernodecount   = "1"
-    enviroment_name = "dev"
-     vnetname = "dev-nitor-vnet-001"
-    subnetname = "dev-nitor-subnet-001"
+    userpoolname        = "devk8usrpl01"
+    userpoolvm_size     = "standard_d2_v3"
+    usernodecount       = "1"
+    enviroment_name     = "dev"
+    vnetname            = "dev-nitor-vnet-001"
+    subnetname          = "dev-nitor-subnet-001"
     resource_group_name = "dev-nitor-rg-002"
   }
 }
@@ -95,13 +95,13 @@ root_acrs = {
   }
 
 }
-root_appgtw ={
-  appgw1={
-    name = "dev-nitor-appgw-01"
-    location            = "Central India"
-    resource_group_name = "dev-nitor-rg-002"
-    vnetname = "dev-nitor-vnet-001"
-    subnetname = "dev-nitor-subnet-App-Gateway"
-  }  
-}
+# root_appgtw ={
+#   appgw1={
+#     name = "dev-nitor-appgw-01"
+#     location            = "Central India"
+#     resource_group_name = "dev-nitor-rg-002"
+#     vnetname = "dev-nitor-vnet-001"
+#     subnetname = "dev-nitor-subnet-App-Gateway"
+#   }  
+# }
 

@@ -26,6 +26,6 @@ variable "root_load_balancers" {
 variable "root_acrs" {
 
 }
-variable "root_appgtw" {
-  
-}
+# variable "root_appgtw" {
+
+# }

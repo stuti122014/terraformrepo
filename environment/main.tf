@@ -27,7 +27,8 @@ module "sqldatabase" {
   sql_server_ids = module.sqlservers.sql_server_ids
 }
 module "AKS_cluster" {
-  depends_on = [module.resource_group,module.network,module.Application_gateway]
+  # depends_on = [module.resource_group, module.network, module.Application_gateway]
+  depends_on = [module.resource_group, module.network]
   source     = "../Module/azurerm_kubernetese_cluster"
   AKS        = var.root_AKS
 
@@ -49,14 +50,14 @@ module "CreateACR" {
   ACR        = var.root_acrs
 
 }
-module "Application_gateway" {
-  depends_on = [ module.network,module.resource_group]
-  source = "../Module/azurerm_application_gateway"
-  app_gw = var.root_appgtw
-  
-}
-module "Access" {
-  depends_on = [ module.AKS_cluster,module.Application_gateway ]
-  source = "../Module/Access"
+# module "Application_gateway" {
+#   depends_on = [ module.network,module.resource_group]
+#   source = "../Module/azurerm_application_gateway"
+#   app_gw = var.root_appgtw
 
-}
+# }
+# module "Access" {
+#   depends_on = [ module.AKS_cluster,module.Application_gateway ]
+#   source = "../Module/Access"
+
+# }
