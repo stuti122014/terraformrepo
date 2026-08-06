@@ -95,13 +95,13 @@ root_acrs = {
   }
 
 }
-# root_appgtw ={
-#   appgw1={
-#     name = "dev-nitor-appgw-01"
-#     location            = "Central India"
-#     resource_group_name = "dev-nitor-rg-002"
-#     vnetname = "dev-nitor-vnet-001"
-#     subnetname = "dev-nitor-subnet-App-Gateway"
-#   }  
-# }
+root_appgtw ={
+  appgw1={
+    name = "dev-nitor-appgw-01"
+    location            = "Central India"
+    resource_group_name = "dev-nitor-rg-002"
+    vnetname = "dev-nitor-vnet-001"
+    subnetname = "dev-nitor-subnet-App-Gateway"
+  }  
+}
 
