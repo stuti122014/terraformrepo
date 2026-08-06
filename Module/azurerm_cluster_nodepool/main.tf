@@ -7,6 +7,7 @@ resource "azurerm_kubernetes_cluster_node_pool" "clusteruserpool" {
   vm_size = each.value.userpoolvm_size
 
   node_count = each.value.usernodecount
+  vnet_subnet_id = data.azurerm_subnet.aksbnet[each.key].id
 
   mode = "User"
 

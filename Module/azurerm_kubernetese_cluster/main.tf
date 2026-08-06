@@ -8,6 +8,7 @@ resource "azurerm_kubernetes_cluster" "aks" {
     name = each.value.default_node_pool
     vm_size = each.value.vm_size
     node_count = each.value.node_count
+    vnet_subnet_id = data.azurerm_subnet.aksbnet[each.key].id
   }
    identity {
     type = "SystemAssigned"
@@ -15,4 +16,17 @@ resource "azurerm_kubernetes_cluster" "aks" {
   tags = { 
     enviroment = each.value.enviroment_name
     }
+    network_profile {
+
+    network_plugin = "azure"
+
+    service_cidr = "10.100.0.0/16"
+
+    dns_service_ip = "10.100.0.10"
+
+  }
+
+  ingress_application_gateway {
+    gateway_id = data.azurerm_application_gateway.apgw1[each.key].id
+  }
 }
