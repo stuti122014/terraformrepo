@@ -72,11 +72,9 @@ jobs:
           name: terraform-plan
           path: environment/tfplan
           retention-days: 1
-
   # ==================================================
   # 2. Terraform Apply
   # ==================================================
- 
   terraform-apply:
     name: Terraform Apply
     runs-on: ubuntu-latest
@@ -90,7 +88,6 @@ jobs:
     # Manual approval
     environment:
       name: production
-
     steps:
 
       - name: Checkout repository
