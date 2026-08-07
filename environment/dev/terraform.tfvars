@@ -53,7 +53,7 @@ root_AKS = {
     location            = "East US 2"
     resource_group_name = "dev-nitor-rg-002"
     dns_prefix          = "devnitoraks"
-    default_node_pool   = "system"  
+    default_node_pool   = "system"
     vm_size             = "standard_d2als_v7"
     node_count          = "1"
     enviroment_name     = "Dev"
@@ -70,7 +70,7 @@ root_database = {
 }
 root_userpool = {
   userpool1 = {
-    userpoolname        = "devk8usrpl01"    
+    userpoolname        = "devk8usrpl01"
     userpoolvm_size     = "standard_d2als_v7"
     usernodecount       = "1"
     enviroment_name     = "dev"
