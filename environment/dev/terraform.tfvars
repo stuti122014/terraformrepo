@@ -5,7 +5,7 @@ root_rg = {
   # }
   rg1 = {
     resource_group_name = "dev-nitor-rg-002"
-    location            = "central india"
+    location            = "East US 2"
   }
 
 }
@@ -13,7 +13,7 @@ root_storage = {
   storage1 = {
     storage_account_name     = "devnitorstorage001"
     resource_group           = "dev-nitor-rg-002"
-    location                 = "central india"
+    location                 = "East US 2"
     account_tier             = "Standard"
     account_replication_type = "LRS"
   }
@@ -22,7 +22,7 @@ root_network = {
   network1 = {
     name                = "dev-nitor-vnet-001"
     address_space       = ["10.0.0.0/16"]
-    location            = "central india"
+    location            = "East US 2"
     resource_group_name = "dev-nitor-rg-002"
 
     subnet = {
@@ -40,7 +40,7 @@ root_network = {
 root_server = {
   sqlserver1 = {
     name                = "dev-nitor-server-001"
-    location            = "central india"
+    location            = "East US 2"
     resource_group_name = "dev-nitor-rg-002"
     admin_login         = "sqladmin"
     admin_password      = "@1234devnitor"
@@ -50,11 +50,11 @@ root_server = {
 root_AKS = {
   aks1 = {
     aks_name            = "dev-nitor-cluster-01"
-    location            = "central india"
+    location            = "East US 2"
     resource_group_name = "dev-nitor-rg-002"
     dns_prefix          = "devnitoraks"
     default_node_pool   = "system"
-    vm_size             = "standard_d2_v3"
+    vm_size             = "Standard B2pls v2"
     node_count          = "1"
     enviroment_name     = "Dev"
     vnetname            = "dev-nitor-vnet-001"
@@ -71,7 +71,7 @@ root_database = {
 root_userpool = {
   userpool1 = {
     userpoolname        = "devk8usrpl01"
-    userpoolvm_size     = "standard_d2_v3"
+    userpoolvm_size     = "Standard B2pls v2"
     usernodecount       = "1"
     enviroment_name     = "dev"
     vnetname            = "dev-nitor-vnet-001"
@@ -82,14 +82,14 @@ root_userpool = {
 root_load_balancers = {
   lb1 = {
     name                = "dev-l4-lb-001"
-    location            = "Central India"
+    location            = "East US 2"
     resource_group_name = "dev-nitor-rg-002"
   }
 }
 root_acrs = {
   acr1 = {
     name                = "devnitoracr001"
-    location            = "Central India"
+    location            = "East US 2"
     resource_group_name = "dev-nitor-rg-002"
     sku                 = "Standard"
   }
@@ -98,7 +98,7 @@ root_acrs = {
 root_appgtw = {
   appgw1 = {
     name                = "dev-nitor-appgw-01"
-    location            = "Central India"
+    location            = "East US 2"
     resource_group_name = "dev-nitor-rg-002"
     vnetname            = "dev-nitor-vnet-001"
     subnetname          = "dev-nitor-subnet-App-Gateway"
