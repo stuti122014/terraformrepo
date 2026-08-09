@@ -77,7 +77,7 @@ jobs:
   # 2. Terraform Apply
   # ==================================================
   
-   terraform-apply:
+  terraform-apply:
     name: Terraform Apply
     runs-on: ubuntu-latest
 
