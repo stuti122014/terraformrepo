@@ -7,7 +7,7 @@ terraform {
   }
   backend "azurerm" {
     resource_group_name  = "NitorProjectStateManagement"
-    storage_account_name = "stgnitorstatemanagement"
+    storage_account_name = "stgnitorstatemanagement1"
     container_name       = "nitorstatecontainer"
     key                  = "nitorprojectstatefilenew"
   }
